@@ -1,0 +1,45 @@
+jquery.player.js
+----------------
+
+* Use javascript to control the Flash playback of MP3s
+
+* by: Brian Reily (brianreily.com)
+* based on plugin from digitalxero.net/music/index.html
+
+Usage
+-----
+
+// Initialize the player object
+$(id).player("music.swf", { options });
+    // options you can use:
+    // file               -> load a file and start playing immediately
+    // artist, title      -> you can use the plugin to track these
+    // volume             -> initial volume
+    // interval           -> amount to change by when using volume("up"/"down")
+    // next_song_callback -> function to call when a song ends
+
+// Load and play a file
+$(id).load("song.mp3", { options });
+    // options: artist, title (same as above)
+
+// Toggle play/pause
+$(id).toggle();
+$(id).toggle("play"); // explicitly play the file
+$(id).toggle("pause"); // explicitly pause the file
+$(id).toggle("stop"); // stop playback, set position to 0
+
+// Control the volume
+$(id).volume(); // returns current volume value
+$(id).volume("up"); // increase volume by "interval" (see above, default is 1)
+$(id).volume("down"); // decrease volume by "interval"
+$(id).volume("mute"); // toggles mute on/off
+$(id).volume(42); // set the volume to 42    
+
+// Get information about playtime (all in seconds)
+$(id).time(); // returns current time
+$(id).time("total"); // returns the total time of the file
+$(id).time(42); // set position to 42 seconds
+
+// Get information about bytes loaded
+$(id).bytes(); // returns number of bytes loaded
+$(id).bytes("total"); // returns the total file size, in bytes
