@@ -17,7 +17,7 @@ Usage - Included test.html and test.mp3 for convenience
 
 * first, include jquery (testing done with 1.2.6)
 * then include jquery.player.js
-* then:
+* then (for version 0.1):
 
 // Initialize the player object
 $("#test").player("music.swf", { options });
@@ -54,12 +54,27 @@ $("#test").time(42);        // set position to 42 seconds
 $("#test").bytes();         // returns number of bytes loaded
 $("#test").bytes("total");  // returns the total file size, in bytes
 
+Changes in Version 0.2
+----------------------
+
+* id3 tag support added:
+    $("#test").id3("TIT2")
+
+* a full list of tags is on the Adobe Flash help docs, under Sound.id3
+
+* useful ones:
+    title  -> "TIT2"
+    artist -> "TPE1"
+    album  -> "TALB"
+    track  -> "TRCK"
+    genre  -> "TCON"
+
+* because of this, the plugin no longer tracks "artist" and "title"
+
 Todo
 ----
 
 Things I'm considering working on:   
-
-* Adding access to a song's ID3 tags through Flash.
 
 * Perhaps combine functions into one function, for example:
     $("#test").player("volume", "up");
