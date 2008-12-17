@@ -6,7 +6,7 @@ jquery.player.js
 * by: Brian Reily (brianreily.com)
 * based on plugin from digitalxero.net/music/index.html
 
-* note that the best version to use is 0.1.  the code in the main
+* note that the best version to use is 0.2.  the code in the main
   directory is in progress.
 
 * to compile your own music.swf, you need mtasc (www.mtasc.org):
