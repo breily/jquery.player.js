@@ -34,6 +34,15 @@ class Music {
         ExternalInterface.addCallback("get_duration",     this, get_duration);
         ExternalInterface.addCallback("get_bytes_total",  this, get_bytes_total);
         ExternalInterface.addCallback("get_bytes_loaded", this, get_bytes_loaded);
+
+        ExternalInterface.addCallback("get_tag", this, get_tag);
+    }
+    function get_tag() {
+        var buffer = "";
+        for (var prop in this.sound.id3) {
+            buffer += "|" + prop + "=" + this.sound.id3[prop] + "| ";
+        }
+        return buffer;
     }
 
     function load(url:String) {
