@@ -22,27 +22,27 @@ $("#test").player("music.swf", { options });
 $("#test").load("test.mp3", { options });
     // options: artist, title (same as above)
 
-// Toggle play/pause
-$("#test").toggle();
-$("#test").toggle("play"); // explicitly play the file
+// Control playback
+$("#test").toggle();        // if playing, pause.  if paused, play
+$("#test").toggle("play");  // explicitly play the file
 $("#test").toggle("pause"); // explicitly pause the file
-$("#test").toggle("stop"); // stop playback, set position to 0
+$("#test").toggle("stop");  // stop playback, set position to 0
 
 // Control the volume
-$("#test").volume(); // returns current volume value
-$("#test").volume("up"); // increase volume by "interval" (see above, default is 1)
-$("#test").volume("down"); // decrease volume by "interval"
-$("#test").volume("mute"); // toggles mute on/off
-$("#test").volume(42); // set the volume to 42    
+$("#test").volume();        // returns current volume value
+$("#test").volume("up");    // increase volume by "interval" (default is 1)
+$("#test").volume("down");  // decrease volume by "interval"
+$("#test").volume("mute");  // toggles mute on/off
+$("#test").volume(42);      // set the volume to 42    
 
 // Get information about playtime (all in seconds)
-$("#test").time(); // returns current time
-$("#test").time("total"); // returns the total time of the file
-$("#test").time(42); // set position to 42 seconds
+$("#test").time();          // returns current time
+$("#test").time("total");   // returns the total time of the file
+$("#test").time(42);        // set position to 42 seconds
 
 // Get information about bytes loaded
-$("#test").bytes(); // returns number of bytes loaded
-$("#test").bytes("total"); // returns the total file size, in bytes
+$("#test").bytes();         // returns number of bytes loaded
+$("#test").bytes("total");  // returns the total file size, in bytes
 
 Todo
 ----
@@ -52,6 +52,7 @@ Things I'm considering working on:
 * Adding access to a song's ID3 tags through Flash.
 
 * Perhaps combine functions into one function, for example:
-    $("#test").player("volume", "up")  
+    $("#test").player("volume", "up");
+    $("#test").player("time", 42);
 
 * Come up with a sweet name for the plugin. 
