@@ -18,18 +18,17 @@ class Music {
         this.sound = new Sound();
         this.last_position = 0;
 
-        ExternalInterface.addCallback("play", this, play);
+        ExternalInterface.addCallback("play",  this, play);
         ExternalInterface.addCallback("pause", this, pause);
-        ExternalInterface.addCallback("stop", this, stop);
-        ExternalInterface.addCallback("load", this, load);
-        ExternalInterface.addCallback("set_volume", this, set_volume);
+        ExternalInterface.addCallback("stop",  this, stop);
+        ExternalInterface.addCallback("load",  this, load);
 
-        ExternalInterface.addCallback("get_volume", this, get_volume);
-        ExternalInterface.addCallback("set_position", this, set_position);
-        ExternalInterface.addCallback("get_position", this, get_position);
-        ExternalInterface.addCallback("get_duration", this, get_duration);
-
-        ExternalInterface.addCallback("get_bytes_total", this, get_bytes_total);
+        ExternalInterface.addCallback("set_volume",       this, set_volume);
+        ExternalInterface.addCallback("get_volume",       this, get_volume);
+        ExternalInterface.addCallback("set_position",     this, set_position);
+        ExternalInterface.addCallback("get_position",     this, get_position);
+        ExternalInterface.addCallback("get_duration",     this, get_duration);
+        ExternalInterface.addCallback("get_bytes_total",  this, get_bytes_total);
         ExternalInterface.addCallback("get_bytes_loaded", this, get_bytes_loaded);
     }
 
