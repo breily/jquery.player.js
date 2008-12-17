@@ -4,7 +4,7 @@
 // based on plugin from digitalxero.net/music/index.html
 //
 // Compile with mtasc (www.mtasc.org):
-// mtasc -main Player.as -swf Player.swf -header 450:325:20 -v -version 8 -group
+// mtasc -main music.as -swf music.swf -header 450:325:20 -version 8 -group
 
 import flash.external.ExternalInterface;
 
