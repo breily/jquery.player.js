@@ -9,8 +9,6 @@ jquery.player.js
 Usage - Included test.html and test.mp3 for convenience
 -------------------------------------------------------
 
-<pre><code>
-
 // Initialize the player object
 $("#test").player("music.swf", { options });
     // options you can use:
@@ -45,8 +43,6 @@ $("#test").time(42); // set position to 42 seconds
 // Get information about bytes loaded
 $("#test").bytes(); // returns number of bytes loaded
 $("#test").bytes("total"); // returns the total file size, in bytes
-
-</code></pre>
 
 Todo
 ----
