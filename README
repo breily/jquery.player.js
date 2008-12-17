@@ -15,6 +15,10 @@ jquery.player.js
 Usage - Included test.html and test.mp3 for convenience
 -------------------------------------------------------
 
+* first, include jquery (testing done with 1.2.6)
+* then include jquery.player.js
+* then:
+
 // Initialize the player object
 $("#test").player("music.swf", { options });
     // options you can use:
