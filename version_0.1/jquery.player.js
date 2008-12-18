@@ -67,7 +67,7 @@
             setTimeout(init_file, 250);
         }
         var init_volume = function() {
-            _.volume(options.volume);
+            _.volume(opts.volume);
         };
         setTimeout(init_volume, 250);
 
