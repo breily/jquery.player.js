@@ -71,6 +71,10 @@ Changes in Version 0.2
 
 * because of this, the plugin no longer tracks "artist" and "title"
 
+* issue:  there have been some problems with getting the id3 tags from some
+  mp3s.  continues even after they finish loading - this despite other programs
+  verifying that they do in fact have tags.
+
 Todo
 ----
 

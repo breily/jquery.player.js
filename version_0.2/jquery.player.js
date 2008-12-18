@@ -146,8 +146,8 @@
                 break;
             default:
                 if (typeof command == "number") {
-                    _.data("volume", command);
                     f.set_volume(command);
+                    _.data("volume", f.get_volume());
                 }
         }
         return this;
