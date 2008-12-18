@@ -80,6 +80,8 @@ Todo
 
 Things I'm considering working on:   
 
+* Try to figure out why id3 doesn't always work.
+
 * Perhaps combine functions into one function, for example:
     $("#test").player("volume", "up");
     $("#test").player("time", 42);
