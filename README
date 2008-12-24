@@ -15,8 +15,8 @@ jquery.player.js
 * there is a test page at http://breily.github.com/jquery.player.js - note
   it is very bare, but should give you an idea of how the plugin works.
 
-Usage - Included test.html and test.mp3 for convenience
--------------------------------------------------------
+Usage
+-----
 
 * first, include jquery (testing done with 1.2.6)
 * then include jquery.player.js
