@@ -54,7 +54,8 @@
         _.data("interval", opts.interval);
         _.data("file", opts.file);
         _.data("next_song_callback", opts.next_song_callback);
-        
+        _.data("version", "0.2");
+
         // Load file and volume settings
         if (options.file) {
             var init_file = function() {

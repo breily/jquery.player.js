@@ -58,6 +58,7 @@
         _.data("title", opts.title);
         _.data("artist", opts.artist);
         _.data("next_song_callback", opts.next_song_callback);
+        _.data("version", "0.1");
         
         // Load file and volume settings
         if (options.file) {
