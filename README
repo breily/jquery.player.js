@@ -50,7 +50,8 @@ $("#test").volume(42);      // set the volume to 42
 
 // Get information about playtime (all in seconds)
 $("#test").time();          // returns current time
-$("#test").time("total");   // returns the total time of the file
+$("#test").time("total");   // returns the total time of the file - note that
+                            // this increases until file is fully loaded
 $("#test").time(42);        // set position to 42 seconds
 
 // Get information about bytes loaded
