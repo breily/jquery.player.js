@@ -12,6 +12,9 @@ jquery.player.js
 * to compile your own music.swf, you need mtasc (www.mtasc.org):
   `mtasc -main music.as -swf music.swf -header 450:325:20 -version 8 -group`
 
+* there is a test page at http://breily.github.com/jquery.player.js - note
+  it is very bare, but should give you an idea of how it works.
+
 Usage - Included test.html and test.mp3 for convenience
 -------------------------------------------------------
 
