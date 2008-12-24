@@ -3,22 +3,22 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
         <script type="text/javascript" src="jquery.player.js"></script>
         <script type="text/javascript">
-            $("#play").player("music.swf");
+            $(function() { $("#play").player("music.swf"); });
         </script>
     </head>
     <body>
         <div id="play"></div>
         <div id="controls">
-            <a href="" onclick="$('#play').load('test.mp3'); return false;">load</a>
-            <a href="" onclick="$('#play').toggle(); return false;">toggle</a>
-            <a href="" onclick="$('#play').volume('up'); return false;">louder</a>
-            <a href="" onclick="$('#play').volume('down'); return false;">quieter</a>
-            <a href="" onclick="$('#play').volume('mute'); return false;">mute</a>
-            <a href="" onclick="alert($('#play').volume()); return false;">alert volume</a>
-            <a href="" onclick="alert($('#play').time()); return false;">alert time</a>
-            <a href="" onclick="alert($('#play').time('total')); return false;">alert duration</a>
-            <a href="" onclick="alert($('#play').bytes()); return false;">alert bytes loaded</a>
-            <a href="" onclick="alert($('#play').bytes('total')); return false;">alert size</a>
+            <a href="#" onclick="$('#play').load('test.mp3'); return false;">load</a>
+            <a href="#" onclick="$('#play').toggle(); return false;">toggle</a>
+            <a href="#" onclick="$('#play').volume('up'); return false;">louder</a>
+            <a href="#" onclick="$('#play').volume('down'); return false;">quieter</a>
+            <a href="#" onclick="$('#play').volume('mute'); return false;">mute</a>
+            <a href="#" onclick="alert($('#play').volume()); return false;">alert volume</a>
+            <a href="#" onclick="alert($('#play').time()); return false;">alert time</a>
+            <a href="#" onclick="alert($('#play').time('total')); return false;">alert duration</a>
+            <a href="#" onclick="alert($('#play').bytes()); return false;">alert bytes loaded</a>
+            <a href="#" onclick="alert($('#play').bytes('total')); return false;">alert size</a>
         </div>
     </body>
 </html>
