@@ -90,4 +90,3 @@ Things I'm considering working on:
     $("#test").player("volume", "up");
     $("#test").player("time", 42);
 
-* Come up with a sweet name for the plugin. 
